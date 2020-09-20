@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{53CE4E27-83D0-E66E-6F56-1DB3F3879112}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PickUpPistol.cs">
+    <Files>
+      <File FileName="Assets/Scripts/FlameAnimations.cs" Line="20" Column="16" />
+      <File FileName="Assets/PlayerCasting.cs" Line="19" Column="2" />
+      <File FileName="Assets/DoorCellOpen.cs" Line="44" Column="35" />
+      <File FileName="Assets/Scripts/Sequences/AOpening.cs" Line="9" Column="5" />
+      <File FileName="Assets/Scripts/Sequences/BFirstTrigger.cs" Line="23" Column="37" />
+      <File FileName="Assets/Scripts/PickUpPistol.cs" Line="6" Column="26" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="46671275-6258-4d0c-8d9c-bf972d4c3f33" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
