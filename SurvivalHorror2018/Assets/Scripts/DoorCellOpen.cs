@@ -19,7 +19,7 @@ public class DoorCellOpen : MonoBehaviour
 
     void OnMouseOver()
     {
-        if (TheDistance <= 2)
+        if (TheDistance > 2)
         {
             ExtraCross.SetActive(true);
             ActionDisplay.SetActive(true);
@@ -28,7 +28,7 @@ public class DoorCellOpen : MonoBehaviour
         }
         if (Input.GetButtonDown("Action"))
         {
-            if(TheDistance <= 2)
+            if(TheDistance <= 1)
             {
                 this.GetComponent<BoxCollider>().enabled = false;
                 ActionDisplay.SetActive(false);

@@ -1,10 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
 
 [RequireComponent(typeof(Rigidbody))]
-
 public class ZombieAI : MonoBehaviour
 {
     
@@ -46,7 +44,7 @@ public class ZombieAI : MonoBehaviour
         if (AttackTrigger == false)
         {
             EnemySpeed = 0.01f;
-            theEnemy.GetComponent<Animation>().Play("NewZombieWalk"); //not actual name of walk, need to figure out animations not using animator for this
+            //theEnemy.GetComponent<Animation>().Play("NewZombieWalk"); //not actual name of walk, need to figure out animations not using animator for this
             transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, EnemySpeed);
 
         }
