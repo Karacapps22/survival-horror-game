@@ -1,9 +1,17 @@
 ﻿<Properties StartupConfiguration="{DB171ED6-A77F-44C9-961A-937DB1560A3B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Sequences/Intro/IntroSequencing.cs">
     <Files>
-      <File FileName="Assets/Scripts/Sequences/BFirstTrigger.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Sequences/AOpening.cs" />
-      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ZombieAI.cs" Line="33" Column="13" />
+      <File FileName="Assets/Scripts/ZombieDeathh.cs" />
+      <File FileName="Assets/Scripts/FirePistol.cs" />
+      <File FileName="Assets/Scripts/ZombieDeath.cs" />
+      <File FileName="Assets/Scripts/JumpDoorOpenn.cs" />
+      <File FileName="Assets/Scripts/PickUpPistol.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Sequences/AOpening.cs" Line="26" Column="23" />
+      <File FileName="Assets/Scripts/Sequences/BFirstTrigger.cs" Line="13" Column="7" />
+      <File FileName="Assets/Scripts/Menus/SplashToMenu.cs" Line="11" Column="38" />
+      <File FileName="Assets/Scripts/Menus/MainMenuFunction.cs" Line="25" Column="33" />
+      <File FileName="Assets/Scripts/Sequences/Intro/IntroSequencing.cs" Line="4" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

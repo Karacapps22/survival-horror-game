@@ -14,7 +14,7 @@ public class ZombieDeath : MonoBehaviour
 
     void DamageZombie(int DamageAmount)
     {
-        //EnemyHealth -= DamageAmount;
+        EnemyHealth -= DamageAmount;
     }
 
 
@@ -26,8 +26,8 @@ public class ZombieDeath : MonoBehaviour
             this.GetComponent<ZombieAI>().enabled = false;
             this.GetComponent<BoxCollider>().enabled = false;
             StatusCheck = 2;
-            //Enemy.GetComponent<Animation>().Stop("walk"); //Not actual name
-            //Enemy.GetComponent<Animation>().Play("back_fall") // this part not working
+            Enemy.GetComponent<Animation>().Stop("ZombieAnim"); //Not actual name
+            Enemy.GetComponent<Animation>().Play("ZombieFall"); // this part not working
             JumpScareMusic.Stop();
             AMusic.Play();
         }

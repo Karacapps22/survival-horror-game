@@ -10,6 +10,7 @@ public class BFirstTrigger : MonoBehaviour
     public GameObject ThePlayer;
     public GameObject TextBox;
     public GameObject TheMarker;
+    //public AudioSource line03;
 
     private void OnTriggerEnter()
     {
@@ -21,7 +22,8 @@ public class BFirstTrigger : MonoBehaviour
     IEnumerator ScenePlayer()
     {
         TextBox.GetComponent<Text>().text = "What's on that table over there?";
-        yield return new WaitForSeconds(2.5f);
+        //line03.Play();
+        yield return new WaitForSeconds(2);
         TextBox.GetComponent<Text>().text = "";
         ThePlayer.GetComponent<FirstPersonController>().enabled = true;
         TheMarker.SetActive(true);

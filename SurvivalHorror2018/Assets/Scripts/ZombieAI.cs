@@ -19,18 +19,18 @@ public class ZombieAI : MonoBehaviour
     void Update()
     {
         //StartCoroutine(InflictDamage());
-        //transform.LookAt(thePlayer.transform);
+        transform.LookAt(thePlayer.transform);
         if (AttackTrigger == false)
         {
-            //EnemySpeed = 0.01f;
-            //theEnemy.GetComponent<Animation>().Play("walk"); //not actual name of walk, need to figure out animations not using animator for this
-            //transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, EnemySpeed);
+            EnemySpeed = 0.01f;
+            theEnemy.GetComponent<Animation>().Play("ZombieWalk"); //not actual name of walk, need to figure out animations not using animator for this
+            transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, EnemySpeed);
 
         }
         if (AttackTrigger == true && IsAttacking == false)
         {
-            //EnemySpeed = 0;
-            //theEnemy.GetComponent<Animation>().Play("attack"); //again, need to figure out animations not using animator for this
+            EnemySpeed = 0;
+            theEnemy.GetComponent<Animation>().Play("ZombieWalk"); //again, need to figure out animations not using animator for this
             StartCoroutine(InflictDamage());
         }
     }
@@ -62,7 +62,7 @@ public class ZombieAI : MonoBehaviour
         yield return new WaitForSeconds(.1f);
         theFlash.SetActive(false);
         yield return new WaitForSeconds(1.1f);
-        //GlobalHealth.currentHealth -= 5;
+        GlobalHealth.currentHealth -= 5;
         HurtGenerator = Random.Range(1, 4);
         yield return new WaitForSeconds(.9f);
         IsAttacking = false;
