@@ -1,17 +1,15 @@
 ﻿<Properties StartupConfiguration="{DB171ED6-A77F-44C9-961A-937DB1560A3B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Sequences/Intro/IntroSequencing.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs">
     <Files>
-      <File FileName="Assets/Scripts/ZombieAI.cs" Line="33" Column="13" />
-      <File FileName="Assets/Scripts/ZombieDeathh.cs" />
-      <File FileName="Assets/Scripts/FirePistol.cs" />
-      <File FileName="Assets/Scripts/ZombieDeath.cs" />
-      <File FileName="Assets/Scripts/JumpDoorOpenn.cs" />
-      <File FileName="Assets/Scripts/PickUpPistol.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Sequences/AOpening.cs" Line="26" Column="23" />
-      <File FileName="Assets/Scripts/Sequences/BFirstTrigger.cs" Line="13" Column="7" />
-      <File FileName="Assets/Scripts/Menus/SplashToMenu.cs" Line="11" Column="38" />
-      <File FileName="Assets/Scripts/Menus/MainMenuFunction.cs" Line="25" Column="33" />
-      <File FileName="Assets/Scripts/Sequences/Intro/IntroSequencing.cs" Line="4" Column="9" />
+      <File FileName="Assets/Scripts/ZombieAI.cs" Line="33" Column="6" />
+      <File FileName="Assets/Scripts/ZombieDeathh.cs" Line="28" Column="64" />
+      <File FileName="Assets/Scripts/FirePistol.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CellExitDoor.cs" Line="57" Column="35" />
+      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/RigidBodyZombie.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/AICharacterControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

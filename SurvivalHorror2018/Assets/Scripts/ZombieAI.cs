@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
+[RequireComponent(typeof(Rigidbody))]
 
 public class ZombieAI : MonoBehaviour
 {
+    
+    Rigidbody m_Rigidbody;
+
     public GameObject thePlayer;
     public GameObject theEnemy;
     public float EnemySpeed = .01f;
@@ -15,22 +20,40 @@ public class ZombieAI : MonoBehaviour
     public AudioSource HurtSound3;
     public int HurtGenerator;
     public GameObject theFlash;
+    public Collider col;
+
+    private void Start()
+    {
+        m_Rigidbody = GetComponent<Rigidbody>();
+        //col = GetComponent<Collider>();
+        //col.isTrigger = true;
+        m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.attachedRigidbody)
+        {
+            other.attachedRigidbody.useGravity = false;
+        }
+    }
 
     void Update()
     {
+
         //StartCoroutine(InflictDamage());
         transform.LookAt(thePlayer.transform);
         if (AttackTrigger == false)
         {
             EnemySpeed = 0.01f;
-            theEnemy.GetComponent<Animation>().Play("ZombieWalk"); //not actual name of walk, need to figure out animations not using animator for this
+            theEnemy.GetComponent<Animation>().Play("NewZombieWalk"); //not actual name of walk, need to figure out animations not using animator for this
             transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, EnemySpeed);
 
         }
         if (AttackTrigger == true && IsAttacking == false)
         {
             EnemySpeed = 0;
-            theEnemy.GetComponent<Animation>().Play("ZombieWalk"); //again, need to figure out animations not using animator for this
+            theEnemy.GetComponent<Animation>().Play("NewZombieWalk"); //again, need to figure out animations not using animator for this
             StartCoroutine(InflictDamage());
         }
     }

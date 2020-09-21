@@ -25,8 +25,8 @@ public class ZombieDeathh : MonoBehaviour
             this.GetComponent<ZombieAI>().enabled = false;
             this.GetComponent<BoxCollider>().enabled = false;
             StatusCheck = 2;
-            Enemy.GetComponent<Animation>().Stop("ZombieAnim"); //Not actual name
-            Enemy.GetComponent<Animation>().Play("ZombieFall"); // this part not working
+            Enemy.GetComponent<Animation>().Stop("NewZombieWalk"); //Not actual name
+            //Enemy.GetComponent<Animation>().Play("ZombieFallBack"); // this part not working
             JumpScareMusic.Stop();
             AMusic.Play();
         }
